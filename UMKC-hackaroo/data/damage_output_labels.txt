@@ -1,0 +1,2 @@
+body_damage_yes
+body_damage_no

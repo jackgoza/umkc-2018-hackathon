@@ -1,0 +1,2 @@
+rust yes
+rust no

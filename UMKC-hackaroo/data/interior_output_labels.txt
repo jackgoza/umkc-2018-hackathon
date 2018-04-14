@@ -1,0 +1,2 @@
+interior damage no
+interior damage yes
