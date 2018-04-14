@@ -43,7 +43,11 @@ if __name__ == "__main__":
 
             try:
                 download_image(item, num, image[0])
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> origin/wayne-branch
             except: "404 error"
 
             num = num + 1
