@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Image classification example</title>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/custom.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">Car estimator</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h1 class="page-header">Car value predictor</h1>
+            </div>
+            <div class="row inputRow">
+                <div class="col-md-4 thumb">
+                    <a class="thumbnail" href="#">
+                        <img id="img_plc" class="img-responsive" src="../UMKC-hackaroo/192358,2005,Ford,F-350,13500.00,13500.00/0.jpg" alt="image" />
+                    </a>
+                </div>
+                <div class="col-md-1 text-center ver-centr">
+                    <input class="vertical-center" id="clk" type="button" value="Predict" />
+                </div>
+                <div class="col-md-4">
+                    <h3 id="txt_area"> </h3>
+                    <img id="meow" src="Caltech_101/animal.gif" alt="O" style="display:none">
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="col-md-12s">
+                    <h4>Upload an image for valuation:</h4>
+                    <input type="file" id="userFile" accept="image/*">
+                </div>
+            </div>
+            </div>
+            
+            <h4>Select a image to test out valuation engine:</h4>
+
+            <div class="col-lg-12">
+
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" name="Image" src="../UMKC-hackaroo/204497,2001,Chevrolet,Express,1500.00,1500.00/2.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" name="Image" src="../UMKC-hackaroo/204607,2004,Ford,F-650,20000.00,20000.00/2.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" name="Image" src="../UMKC-hackaroo/192358,2005,Ford,F-350,13500.00,13500.00/2.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" name="Image" src="../UMKC-hackaroo/192358,2005,Ford,F-350,13500.00,13500.00/0.jpg"s alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" name="Image" src="../UMKC-hackaroo/192358,2005,Ford,F-350,13500.00,13500.00/0.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" name="Image" src="../UMKC-hackaroo/192358,2005,Ford,F-350,13500.00,13500.00/4.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" name="Image" src="../UMKC-hackaroo/192358,2005,Ford,F-350,13500.00,13500.00/3.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" name="Image" src="../UMKC-hackaroo/204497,2001,Chevrolet,Express,1500.00,1500.00/4.jpg" alt="">
+                </a>
+            </div>
+        </div>
+            </div>
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+
+</body>
+
+</html>
