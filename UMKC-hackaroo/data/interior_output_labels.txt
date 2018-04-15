@@ -1,2 +1,2 @@
-interior damage no
-interior damage yes
+interior_damage_no
+interior_damage_yes

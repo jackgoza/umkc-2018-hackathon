@@ -1,2 +1,2 @@
-rust yes
-rust no
+rust_yes
+rust_no

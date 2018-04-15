@@ -26,7 +26,7 @@ if __name__ == "__main__":
         .map(lambda x: (x[0] + ',' + x[1] + ',' + x[2] + ',' + x[3] + ',' + x[4] + ',' + x[5], x[6]))\
         .reduceByKey(lambda a, b: a + ',' + b)
 
-    auto_id = "154846"
+    auto_id = "192358"
     rdd1 = rdd.filter(lambda x: auto_id in x[0])
 
     image_list = ()
@@ -48,11 +48,11 @@ if __name__ == "__main__":
                     damage = inception_rank1(damage_labels, damage_graph)
 
                     if damage[0][0] == 'body_damage_yes':
-                        depreciated = depreciated * 0.97
+                        depreciated = depreciated * 0.98
 
                     rust = inception_rank1(rust_labels, rust_graph)
                     if rust[0][0] == 'rust_yes':
-                        depreciated = depreciated * 0.98
+                        depreciated = depreciated * 0.99
 
                 if category_rank[0][0] == 'tire':
                     tire = inception_rank1(tire_labels, tire_graph)
